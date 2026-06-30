@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fallbacks críticos — evita layout quebrado se o CSS demorar a carregar */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #f6f2ea;
+  color: #262626;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+@layer base {
+  body {
+    @apply bg-sand font-sans text-text-dark antialiased;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-accent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-forest-light hover:shadow-lift;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lift;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-forest/20 bg-transparent px-6 py-3 text-sm font-medium text-forest transition-all duration-300 hover:-translate-y-0.5 hover:border-forest hover:bg-forest/5;
+  }
+
+  .card-surface {
+    @apply rounded-3xl bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card;
+  }
+}
