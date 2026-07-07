@@ -2,15 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { HiLocationMarker, HiVideoCamera } from "react-icons/hi";
-import { LuClock3 } from "react-icons/lu";
 import { IMAGES, WHATSAPP_URL } from "@/lib/constants";
-
-const highlights = [
-  { icon: LuClock3, label: "25 anos de experiência" },
-  { icon: HiLocationMarker, label: "Bairro Rio Branco, NH" },
-  { icon: HiVideoCamera, label: "Presencial e online" },
-];
 
 export default function Hero() {
   return (
@@ -68,20 +60,6 @@ export default function Hero() {
                 Conhecer as especialidades
               </a>
             </div>
-
-            <ul className="mt-8 flex flex-col gap-2.5 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-x-5 sm:gap-y-2">
-              {highlights.map(({ icon: Icon, label }) => (
-                <li
-                  key={label}
-                  className="flex items-center gap-2 text-sm text-text-muted"
-                >
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-forest/10 text-forest">
-                    <Icon className="h-4 w-4" />
-                  </span>
-                  {label}
-                </li>
-              ))}
-            </ul>
           </motion.div>
 
           <motion.div
