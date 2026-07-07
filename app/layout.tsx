@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#3F4F3D",
+  themeColor: "#0F9C97",
 };
 
 const fraunces = Fraunces({
@@ -22,22 +22,24 @@ const inter = Inter({
   display: "swap",
 });
 
+const title = "Psicóloga Débora Goulart | Psicoterapia em Novo Hamburgo - RS";
+
 const description =
-  "Atendimento psicológico humanizado para adultos, adolescentes e famílias, no Centro de Novo Hamburgo. Psicoterapia individual, avaliação psicológica e suporte especializado em TEA e TDAH.";
+  "Atendimento psicológico humanizado para crianças, adolescentes e adultos, com 25 anos de experiência clínica e especialização em dependência química. Presencial no Bairro Rio Branco, Novo Hamburgo, e também online.";
 
 export const metadata: Metadata = {
-  title: "Clínica Psicologar | Psicologia em Novo Hamburgo - RS",
+  title,
   description,
   openGraph: {
-    title: "Clínica Psicologar | Psicologia em Novo Hamburgo - RS",
+    title,
     description,
     locale: "pt_BR",
     type: "website",
-    siteName: "Clínica Psicologar",
+    siteName: "Psicóloga Débora Goulart",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clínica Psicologar | Psicologia em Novo Hamburgo - RS",
+    title,
     description,
   },
 };

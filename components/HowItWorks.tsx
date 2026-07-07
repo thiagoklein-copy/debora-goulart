@@ -15,7 +15,7 @@ const steps = [
     number: "02",
     title: "Primeira sessão",
     description:
-      "Conhecemos sua história e definimos juntos a melhor abordagem de cuidado.",
+      "Conheço sua história e definimos juntos a melhor abordagem de cuidado.",
   },
   {
     number: "03",
@@ -27,7 +27,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <MotionSection className="bg-forest py-20 text-white sm:py-28">
+    <MotionSection className="bg-forest-dark py-20 text-white sm:py-28">
       <div className="section-container">
         <SectionHeader
           eyebrow="Como funciona"

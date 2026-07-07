@@ -1,13 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  HiUser,
-  HiUsers,
-  HiClipboardDocumentCheck,
-  HiHeart,
-  HiAcademicCap,
-} from "react-icons/hi2";
+import { HiUser, HiUsers, HiHeart, HiVideoCamera } from "react-icons/hi2";
 import MotionSection from "@/components/ui/MotionSection";
 import { SectionHeader } from "@/components/ui/Shared";
 import { buildWhatsAppUrl } from "@/lib/constants";
@@ -28,45 +22,36 @@ const services: Service[] = [
     icon: HiUser,
     title: "Psicoterapia Individual (Adultos)",
     description:
-      "Sessões semanais para ansiedade, autoestima, relacionamentos e desenvolvimento pessoal.",
+      "Sessões semanais de escuta psicanalítica para ansiedade, relacionamentos, autoconhecimento e momentos de transição de vida.",
     duration: "50 min",
-    price: "A partir de R$ 180/sessão",
+    price: "Valores sob consulta",
   },
   {
     id: "psicoterapia-infantojuvenil",
     icon: HiUsers,
     title: "Psicoterapia Infantojuvenil",
     description:
-      "Acompanhamento para crianças e adolescentes, com escuta lúdica e suporte à família.",
+      "Acompanhamento especializado para crianças e adolescentes, trabalhando junto com a família para um desenvolvimento emocional saudável.",
     duration: "50 min",
-    price: "A partir de R$ 180/sessão",
+    price: "Valores sob consulta",
   },
   {
-    id: "avaliacao-tea-tdah",
-    icon: HiClipboardDocumentCheck,
-    title: "Avaliação Psicológica (TEA/TDAH)",
+    id: "dependencia-quimica",
+    icon: HiHeart,
+    title: "Dependência Química",
     description:
-      "Processo estruturado de avaliação para diagnóstico e laudo, com devolutiva detalhada.",
-    duration: "Processo de 4 a 6 encontros",
+      "Atendimento especializado a pacientes em tratamento de dependência química, com abordagem acolhedora e sem julgamentos, em parceria com a rede de apoio do paciente.",
+    duration: "50 min",
     price: "Sob consulta",
   },
   {
-    id: "violencia-mulher",
-    icon: HiHeart,
-    title: "Atendimento a Mulheres em Situação de Violência",
+    id: "atendimento-online",
+    icon: HiVideoCamera,
+    title: "Atendimento Online",
     description:
-      "Espaço seguro de escuta e fortalecimento, com abordagem especializada.",
+      "Mesma qualidade de escuta e cuidado, de onde você estiver — sessões por videochamada com total sigilo e conforto.",
     duration: "50 min",
-    price: "A partir de R$ 180/sessão",
-  },
-  {
-    id: "palestras-workshops",
-    icon: HiAcademicCap,
-    title: "Palestras e Workshops (Empresas e Escolas)",
-    description:
-      "Conteúdos sobre saúde mental, educação e relações humanas saudáveis para equipes e instituições de ensino.",
-    duration: "Sob orçamento",
-    price: "Sob orçamento",
+    price: "Mesmo valor do atendimento presencial",
   },
 ];
 
@@ -106,7 +91,9 @@ function ServiceCard({
       </div>
 
       <a
-        href={buildWhatsAppUrl(`Olá! Gostaria de saber mais sobre: ${service.title}`)}
+        href={buildWhatsAppUrl(
+          `Olá, Débora! Gostaria de saber mais sobre: ${service.title}`,
+        )}
         target="_blank"
         rel="noopener noreferrer"
         className="btn-ghost mt-5 w-full text-center text-sm"
@@ -117,15 +104,12 @@ function ServiceCard({
   );
 }
 
-const primaryServices = services.slice(0, 3);
-const secondaryServices = services.slice(3);
-
 export default function Services() {
   return (
     <MotionSection id="atendimentos" className="py-20 sm:py-28">
       <div className="section-container">
         <SectionHeader
-          eyebrow="Como podemos ajudar"
+          eyebrow="Como posso te ajudar"
           title={
             <>
               Atendimentos pensados para cada etapa da sua{" "}
@@ -134,31 +118,10 @@ export default function Services() {
           }
         />
 
-        <div className="space-y-6">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {primaryServices.map((service, index) => (
-              <div
-                key={service.id}
-                className={
-                  index === 2
-                    ? "sm:col-span-2 sm:max-w-md sm:justify-self-center lg:col-span-1 lg:max-w-none"
-                    : undefined
-                }
-              >
-                <ServiceCard service={service} index={index} />
-              </div>
-            ))}
-          </div>
-
-          <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
-            {secondaryServices.map((service, index) => (
-              <ServiceCard
-                key={service.id}
-                service={service}
-                index={index + primaryServices.length}
-              />
-            ))}
-          </div>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {services.map((service, index) => (
+            <ServiceCard key={service.id} service={service} index={index} />
+          ))}
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-text-muted">

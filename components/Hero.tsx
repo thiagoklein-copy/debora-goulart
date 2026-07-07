@@ -19,17 +19,17 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="eyebrow mb-6">Clínica de Psicologia em Novo Hamburgo</p>
+            <p className="eyebrow mb-6">Psicoterapia com 25 anos de experiência</p>
 
             <h1 className="font-serif text-4xl font-medium leading-[1.1] text-forest sm:text-5xl lg:text-6xl xl:text-7xl">
-              Cuidar da sua mente é um ato de coragem.{" "}
-              <em className="italic text-accent">Nós caminhamos com você.</em>
+              Um espaço seguro para você se encontrar.{" "}
+              <em className="italic text-accent">Com 25 anos de escuta e cuidado.</em>
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-text-muted sm:text-lg">
-              Atendimento psicológico humanizado para adultos, adolescentes e
-              famílias, no Centro de Novo Hamburgo. Psicoterapia individual,
-              avaliação psicológica e suporte especializado em TEA e TDAH.
+              Atendimento psicológico presencial e online, com escuta acolhedora,
+              orientação psicanalítica e mais de duas décadas de prática clínica no
+              Bairro Rio Branco, Novo Hamburgo.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -41,8 +41,8 @@ export default function Hero() {
               >
                 Falar no WhatsApp
               </a>
-              <a href="#psicologas" className="btn-ghost">
-                Conhecer as psicólogas
+              <a href="#atendimentos" className="btn-ghost">
+                Conhecer as especialidades
               </a>
             </div>
           </motion.div>
@@ -54,7 +54,7 @@ export default function Hero() {
             className="relative"
           >
             <div className="relative aspect-[4/5] overflow-hidden rounded-4xl shadow-card sm:aspect-[5/6]">
-              {/* TODO: Replace IMAGES.hero.src with /public/hero.jpg (foto real da clínica, sem rostos) */}
+              {/* SUBSTITUIR por foto real da Débora ou foto de consultório/ambiente aconchegante — aguardando envio */}
               <Image
                 src={IMAGES.hero.src}
                 alt={IMAGES.hero.alt}

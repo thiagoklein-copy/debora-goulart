@@ -10,7 +10,7 @@ import { WHATSAPP_URL } from "@/lib/constants";
 const values = [
   { icon: HiHeart, label: "Acolhimento" },
   { icon: LuLeaf, label: "Ética e sigilo" },
-  { icon: HiShieldCheck, label: "Base científica" },
+  { icon: HiShieldCheck, label: "Formação continuada" },
 ];
 
 export default function About() {
@@ -18,22 +18,30 @@ export default function About() {
     <MotionSection id="sobre" className="py-20 sm:py-28">
       <div className="section-container">
         <SectionHeader
-          eyebrow="Sobre nós"
+          eyebrow="Sobre mim"
           title={
             <>
-              A Psicologar nasceu de uma palavra que viramos{" "}
-              <em className="italic text-accent">propósito</em>
+              A psicoterapia como um espaço de{" "}
+              <em className="italic text-accent">encontro</em> comigo mesma... e com
+              você
             </>
           }
         />
 
-        <p className="mx-auto mb-14 max-w-3xl text-center text-base leading-relaxed text-text-muted sm:text-lg">
-          O nome Psicologar surgiu de um trocadilho do dia a dia — &ldquo;deixa eu
-          psicologar sobre isso&rdquo; — e virou a forma como cuidamos das pessoas:
-          com escuta, técnica e leveza. Localizada no Centro de Novo Hamburgo, a
-          clínica reúne profissionais com formação sólida e abordagens diferentes,
-          para que cada pessoa encontre o cuidado certo para o seu momento.
-        </p>
+        <div className="mx-auto mb-14 max-w-3xl space-y-4 text-center text-base leading-relaxed text-text-muted sm:text-lg">
+          <p>
+            Sou psicóloga há 25 anos, com atuação voltada à psicoterapia de orientação
+            psicanalítica para crianças, adolescentes e adultos. Ao longo da minha
+            trajetória, me especializei também no tratamento da dependência química,
+            unindo profundidade técnica a um cuidado genuinamente humano.
+          </p>
+          <p>
+            Acredito que a terapia é um espaço de escuta sem julgamentos — onde cada
+            pessoa pode se entender melhor e construir escolhas mais saudáveis para a
+            sua vida. Atendo em consultório no Bairro Rio Branco, em Novo Hamburgo, e
+            também de forma online.
+          </p>
+        </div>
 
         <div className="mb-12 grid gap-6 sm:grid-cols-3">
           {values.map(({ icon: Icon, label }, i) => (

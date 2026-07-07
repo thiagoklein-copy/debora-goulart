@@ -10,7 +10,7 @@ export default function Logo({ className = "", light = false }: LogoProps) {
     <span
       className={`font-serif text-xl font-semibold tracking-tight sm:text-2xl ${light ? "text-white" : "text-forest"} ${className}`}
     >
-      Psicologar
+      Débora Goulart | Psicóloga
     </span>
   );
 }

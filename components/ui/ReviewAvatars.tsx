@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+/* placeholder, trocar se houver autorização dos pacientes */
 const AVATARS = [
   "/review-avatars/1.jpg",
   "/review-avatars/2.jpg",

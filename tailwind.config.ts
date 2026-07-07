@@ -10,19 +10,20 @@ const config: Config = {
     extend: {
       colors: {
         forest: {
-          DEFAULT: "#3F4F3D",
-          light: "#445843",
+          DEFAULT: "#0F9C97",
+          light: "#12B0AA",
+          dark: "#0B3A3A",
         },
         sand: {
-          DEFAULT: "#F6F2EA",
-          dark: "#EDE6DA",
+          DEFAULT: "#FAF6F0",
+          dark: "#F0EBE3",
         },
         accent: {
-          DEFAULT: "#B08D57",
-          warm: "#C98A5E",
+          DEFAULT: "#C97C4B",
+          warm: "#D4895A",
         },
         text: {
-          dark: "#262626",
+          dark: "#1A1A1A",
           muted: "#6B6B63",
         },
         whatsapp: "#25D366",
@@ -32,9 +33,9 @@ const config: Config = {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 8px 30px rgba(63, 79, 61, 0.08)",
-        card: "0 12px 40px rgba(63, 79, 61, 0.1)",
-        lift: "0 20px 50px rgba(63, 79, 61, 0.15)",
+        soft: "0 8px 30px rgba(15, 156, 151, 0.08)",
+        card: "0 12px 40px rgba(15, 156, 151, 0.1)",
+        lift: "0 20px 50px rgba(15, 156, 151, 0.15)",
       },
       borderRadius: {
         "4xl": "2rem",

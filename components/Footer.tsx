@@ -5,6 +5,7 @@ import {
   CLINIC_PHONE,
   CLINIC_INSTAGRAM_URL,
   CLINIC_INSTAGRAM,
+  PROFESSIONAL_CRP,
   buildWhatsAppUrl,
 } from "@/lib/constants";
 import { FaInstagram } from "react-icons/fa";
@@ -12,22 +13,21 @@ import { FaInstagram } from "react-icons/fa";
 const serviceLinks = [
   { label: "Psicoterapia Adultos", href: "#psicoterapia-adultos" },
   { label: "Psicoterapia Infantojuvenil", href: "#psicoterapia-infantojuvenil" },
-  { label: "Avaliação TEA/TDAH", href: "#avaliacao-tea-tdah" },
-  { label: "Atendimento Especializado", href: "#violencia-mulher" },
-  { label: "Palestras e Workshops", href: "#palestras-workshops" },
+  { label: "Dependência Química", href: "#dependencia-quimica" },
+  { label: "Atendimento Online", href: "#atendimento-online" },
 ];
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-forest/10 bg-[#EFEBE3]">
+    <footer className="border-t border-forest/10 bg-sand-dark">
       <div className="section-container py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-text-muted">
-              Psicoterapia com escuta, técnica e acolhimento — em Novo Hamburgo.
+              Psicoterapia com escuta, ética e cuidado — em Novo Hamburgo.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function Footer() {
               <p className="text-sm text-text-muted">{CLINIC_ADDRESS}</p>
               <p>
                 <a
-                  href={buildWhatsAppUrl("Olá! Gostaria de mais informações.")}
+                  href={buildWhatsAppUrl("Olá, Débora! Gostaria de mais informações.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-text-muted hover:text-forest"
@@ -101,9 +101,9 @@ export default function Footer() {
         <div className="mt-12 border-t border-forest/10 pt-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm text-text-muted">
-              © {year} Clínica Psicologar. Todos os direitos reservados.
+              © {year} Débora Goulart. Todos os direitos reservados.
             </p>
-            <p className="text-xs text-text-muted">CRP 07/11100</p>
+            <p className="text-xs text-text-muted">{PROFESSIONAL_CRP}</p>
           </div>
           <p className="mt-4 text-xs leading-relaxed text-text-muted/80">
             Este site não substitui atendimento de urgência. Em caso de crise,

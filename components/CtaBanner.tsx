@@ -9,7 +9,7 @@ export default function CtaBanner() {
   return (
     <MotionSection className="py-8 sm:py-12">
       <div className="section-container">
-        <div className="overflow-hidden rounded-4xl bg-forest shadow-card">
+        <div className="overflow-hidden rounded-4xl bg-forest-dark shadow-card">
           <div className="grid items-center lg:grid-cols-2">
             <div className="p-8 sm:p-12 lg:p-16">
               <motion.div
@@ -23,8 +23,7 @@ export default function CtaBanner() {
                   <em className="italic text-accent-warm">cuidado</em>
                 </h2>
                 <p className="mt-4 max-w-md text-base text-white/80">
-                  Fale agora com a Clínica Psicologar e agende sua primeira
-                  sessão.
+                  Fale agora com a Débora e agende sua primeira sessão.
                 </p>
                 <a
                   href={WHATSAPP_URL}
@@ -38,7 +37,6 @@ export default function CtaBanner() {
             </div>
 
             <div className="relative aspect-[3/4] sm:aspect-[4/3] lg:aspect-auto lg:min-h-[420px] lg:h-full">
-              {/* TODO: Replace IMAGES.ctaBanner.src with /public/cta-banner.jpg (foto real, sem rosto) */}
               <Image
                 src={IMAGES.ctaBanner.src}
                 alt={IMAGES.ctaBanner.alt}

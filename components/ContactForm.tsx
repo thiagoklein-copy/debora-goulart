@@ -18,10 +18,9 @@ import { formatPhoneMask } from "@/lib/phone";
 const objectives = [
   "Psicoterapia individual (adulto)",
   "Psicoterapia infantojuvenil",
-  "Avaliação psicológica (TEA/TDAH)",
-  "Atendimento especializado (violência contra a mulher)",
-  "Palestra/workshop para empresa ou escola",
-  "Outro",
+  "Tratamento de dependência química",
+  "Atendimento online",
+  "Ainda não sei, quero conversar",
 ] as const;
 
 export default function ContactForm() {
@@ -34,7 +33,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     const lines = [
-      "Olá! Vim pelo site da Clínica Psicologar.",
+      "Olá, Débora! Vim pelo site.",
       "",
       `*Nome:* ${name}`,
       `*Telefone:* ${phone}`,
@@ -45,7 +44,6 @@ export default function ContactForm() {
       lines.push("", `*Mensagem:* ${message.trim()}`);
     }
 
-    // Backend/API route can be added later for CRM integration (e.g. save lead before redirect)
     const url = buildWhatsAppUrl(lines.join("\n"));
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -162,7 +160,7 @@ export default function ContactForm() {
                 <div>
                   <p className="text-sm font-medium text-forest">Telefone / WhatsApp</p>
                   <a
-                    href={buildWhatsAppUrl("Olá! Gostaria de mais informações.")}
+                    href={buildWhatsAppUrl("Olá, Débora! Gostaria de mais informações.")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-1 block text-sm text-text-muted hover:text-forest"
@@ -191,15 +189,13 @@ export default function ContactForm() {
                 <FaClock className="mt-1 h-5 w-5 shrink-0 text-accent" />
                 <div>
                   <p className="text-sm font-medium text-forest">Horário de atendimento</p>
-                  <p className="mt-1 text-sm text-text-muted">
-                    Segunda a sexta, 8h às 19h (mediante agendamento)
-                  </p>
+                  {/* CONFIRMAR com a Débora — manter texto genérico até receber horário exato */}
+                  <p className="mt-1 text-sm text-text-muted">Mediante agendamento</p>
                 </div>
               </div>
             </div>
 
             <div className="overflow-hidden rounded-3xl shadow-soft">
-              {/* TODO: Replace MAPS_EMBED_URL in lib/constants.ts with real clinic embed */}
               <iframe
                 src={MAPS_EMBED_URL}
                 width="100%"
@@ -208,7 +204,7 @@ export default function ContactForm() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização da Clínica Psicologar no mapa"
+                title="Localização do consultório da Psicóloga Débora Goulart no mapa"
                 className="w-full"
               />
             </div>

@@ -8,33 +8,33 @@ import ReviewAvatars from "@/components/ui/ReviewAvatars";
 const testimonials = [
   {
     quote:
-      "A clínica fica super bem localizada no Centro de Novo Hamburgo e o ambiente é acolhedor desde a recepção. Comecei a terapia em 2024 e hoje me sinto muito mais segura para lidar com as coisas do dia a dia.",
-    author: "Adriana B.",
+      "Cheguei depois de já ter passado por outros profissionais, e foi a primeira vez que me senti realmente ouvida. A Débora tem uma escuta muito diferenciada.",
+    author: "Marina S.",
   },
   {
     quote:
-      "Cheguei desconfiada, depois de uma experiência ruim em outro lugar. A Luiza me ajudou a recuperar o equilíbrio com muita escuta e profissionalismo.",
-    author: "Ezequiel A.",
+      "Acompanho com a Débora há mais de 2 anos. É uma relação de muita confiança, sempre com um olhar atento e atualizado.",
+    author: "Roberto A.",
   },
   {
     quote:
-      "A Nara é uma profissional incrível. Me senti acolhida desde a primeira sessão e percebi mudanças reais na forma como encaro meus desafios.",
-    author: "Paula B.",
+      "Desde a primeira sessão me senti acolhida. O consultório é tranquilo e ela tem um jeito muito humano de conduzir as conversas.",
+    author: "Juliana P.",
   },
   {
     quote:
-      "Levei minha filha para avaliação e fomos muito bem atendidos no horário marcado. Hoje ela segue em acompanhamento com uma profissional excelente.",
-    author: "Jerônimo V.",
+      "Levei minha filha para acompanhamento e o processo incluiu toda a família. Vimos uma evolução real no comportamento dela.",
+    author: "Camila T.",
   },
   {
     quote:
-      "Já frequento há mais de 6 meses. Atendimento atencioso, pontual e com resultados visíveis na minha rotina.",
-    author: "Joel M.",
+      "O que mais me marca é a combinação de empatia com orientações claras e objetivas. Isso fez toda diferença no meu tratamento.",
+    author: "Eduardo M.",
   },
   {
     quote:
-      "Ambiente agradável, profissionais qualificadas e um cuidado que vai muito além da sessão de 50 minutos.",
-    author: "Suelen Z.",
+      "Profissional extremamente dedicada, sempre em atualização. Recomendo de olhos fechados.",
+    author: "Fernanda G.",
   },
 ];
 
@@ -46,8 +46,8 @@ export default function Testimonials() {
           eyebrow="Resultados reais"
           title={
             <>
-              Quem já caminhou com a{" "}
-              <em className="italic text-accent">gente</em>
+              Quem já caminhou{" "}
+              <em className="italic text-accent">comigo</em>
             </>
           }
         />
@@ -77,10 +77,12 @@ export default function Testimonials() {
 
         <div className="mt-12 flex justify-center">
           <div className="inline-flex items-center gap-4 rounded-full bg-white px-6 py-3 shadow-soft">
+            {/* placeholder, trocar se houver autorização dos pacientes */}
             <ReviewAvatars />
             <div className="flex items-center gap-2">
               <Stars />
-              <span className="text-sm font-medium text-forest">4.9</span>
+              <span className="text-sm font-medium text-forest">5,0</span>
+              <span className="text-sm text-text-muted">· 61 avaliações</span>
             </div>
           </div>
         </div>
