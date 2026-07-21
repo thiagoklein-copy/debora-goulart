@@ -92,7 +92,7 @@ function ServiceCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.08, duration: 0.5 }}
-      className="card-surface flex h-full flex-col p-6 sm:p-8"
+      className="card-surface flex h-full w-full flex-col p-6 sm:w-[calc(50%-0.75rem)] sm:p-8 lg:w-[calc(33.333%-1rem)]"
     >
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-forest/10 text-forest">
         <Icon className="h-6 w-6" />
@@ -139,7 +139,8 @@ export default function Services() {
           }
         />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* flex + justify-center: com 5 cards, a 2ª linha (2 itens) fica centralizada */}
+        <div className="flex flex-wrap justify-center gap-6">
           {services.map((service, index) => (
             <ServiceCard key={service.id} service={service} index={index} />
           ))}
