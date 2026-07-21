@@ -8,9 +8,9 @@ import { SectionHeader } from "@/components/ui/Shared";
 import { WHATSAPP_URL } from "@/lib/constants";
 
 const values = [
-  { icon: HiHeart, label: "Acolhimento" },
-  { icon: LuLeaf, label: "Ética e sigilo" },
-  { icon: HiShieldCheck, label: "Formação continuada" },
+  { icon: HiHeart, label: "TCC baseada em evidências" },
+  { icon: LuLeaf, label: "Resultado em 3 meses" },
+  { icon: HiShieldCheck, label: "Formação UFRGS" },
 ];
 
 export default function About() {
@@ -21,25 +21,24 @@ export default function About() {
           eyebrow="Sobre mim"
           title={
             <>
-              A psicoterapia como um espaço de{" "}
-              <em className="italic text-accent">encontro</em> comigo mesma... e com
-              você
+              Terapia com foco em{" "}
+              <em className="italic text-accent">resultado</em>, sem enrolação
             </>
           }
         />
 
         <div className="mx-auto mb-14 max-w-3xl space-y-4 text-center text-base leading-relaxed text-text-muted sm:text-lg">
           <p>
-            Sou psicóloga há 25 anos, com atuação voltada à psicoterapia de orientação
-            psicanalítica para crianças, adolescentes e adultos. Ao longo da minha
-            trajetória, me especializei também no tratamento da dependência química,
-            unindo profundidade técnica a um cuidado genuinamente humano.
+            Sou psicóloga há 16 anos, especialista em Terapia Cognitivo-Comportamental
+            (TCC), com atuação também em Avaliação Neuropsicológica e Hipnoterapia.
+            Atendo crianças, adolescentes e adultos, com foco em ansiedade, síndrome
+            do pânico, depressão e transtornos alimentares.
           </p>
           <p>
-            Acredito que a terapia é um espaço de escuta sem julgamentos — onde cada
-            pessoa pode se entender melhor e construir escolhas mais saudáveis para a
-            sua vida. Atendo em consultório no Bairro Rio Branco, em Novo Hamburgo, e
-            também de forma online.
+            Minha abordagem é direta e baseada em evidências científicas: trabalho no
+            problema atual do paciente para gerar mudanças reais e perceptíveis já nos
+            primeiros meses de acompanhamento. Sou graduada pela ULBRA (2007) e
+            pós-graduada em Terapia Cognitivo-Comportamental pela UFRGS (2012).
           </p>
         </div>
 

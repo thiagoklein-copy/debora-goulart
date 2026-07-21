@@ -4,6 +4,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { IMAGES, WHATSAPP_URL } from "@/lib/constants";
 
+const trustItems = [
+  "16 anos de experiência",
+  "5,0 ⭐ no Google",
+  "39 avaliações",
+  "CRP 07/16250",
+] as const;
+
 export default function Hero() {
   return (
     <section
@@ -29,22 +36,22 @@ export default function Hero() {
             className="order-2 lg:order-1"
           >
             <span className="mb-5 inline-flex items-center rounded-full border border-forest/15 bg-white/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-forest backdrop-blur-sm">
-              Psicoterapia com 25 anos de experiência
+              16 anos de experiência em TCC
             </span>
 
             <h1 className="max-w-xl font-serif text-[1.75rem] font-medium leading-[1.15] tracking-tight text-forest sm:max-w-2xl sm:text-4xl sm:leading-[1.12] lg:text-[2.75rem] lg:leading-[1.1] xl:text-5xl">
               <span className="block text-balance">
-                Um espaço seguro para você se encontrar.
+                Mudanças reais começam na próxima sessão.
               </span>
               <span className="mt-2 block text-balance font-normal italic text-accent sm:mt-3">
-                Com 25 anos de escuta e cuidado.
+                Vamos começar juntos?
               </span>
             </h1>
 
             <p className="mt-5 max-w-lg text-base leading-relaxed text-text-muted sm:mt-6 sm:text-lg">
-              Atendimento psicológico presencial e online, com escuta acolhedora,
-              orientação psicanalítica e mais de duas décadas de prática clínica no
-              Bairro Rio Branco, Novo Hamburgo.
+              Psicoterapia baseada em evidências (TCC) para ansiedade, pânico,
+              depressão e transtornos alimentares. Atendimento presencial em Novo
+              Hamburgo, com resultados desde as primeiras semanas.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center">
@@ -60,6 +67,19 @@ export default function Hero() {
                 Conhecer as especialidades
               </a>
             </div>
+
+            <motion.ul
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.35 }}
+              className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-forest/10 pt-6 text-sm text-text-muted"
+            >
+              {trustItems.map((item) => (
+                <li key={item} className="font-medium text-forest">
+                  {item}
+                </li>
+              ))}
+            </motion.ul>
           </motion.div>
 
           <motion.div
@@ -69,7 +89,7 @@ export default function Hero() {
             className="relative order-1 mx-auto w-full max-w-md lg:order-2 lg:max-w-none"
           >
             <div className="relative aspect-[5/4] overflow-hidden rounded-4xl shadow-card sm:aspect-[4/3] lg:aspect-[5/6]">
-              {/* SUBSTITUIR por foto real da Débora ou foto de consultório/ambiente aconchegante — aguardando envio */}
+              {/* SUBSTITUIR por foto real da Greice ou do consultório — aguardando envio */}
               <Image
                 src={IMAGES.hero.src}
                 alt={IMAGES.hero.alt}
@@ -87,7 +107,7 @@ export default function Hero() {
 
             <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/20 bg-white/90 px-4 py-3 shadow-soft backdrop-blur-md sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-[220px]">
               <p className="text-xs font-semibold uppercase tracking-wider text-forest">
-                Orientação psicanalítica
+                TCC baseada em evidências
               </p>
               <p className="mt-0.5 text-sm text-text-muted">
                 Crianças, adolescentes e adultos

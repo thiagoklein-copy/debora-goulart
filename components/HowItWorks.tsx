@@ -21,7 +21,7 @@ const steps = [
     number: "03",
     title: "Acompanhamento contínuo",
     description:
-      "Sessões regulares, no seu ritmo, com sigilo e respeito total.",
+      "Primeiros resultados percebidos em até 3 meses de acompanhamento — no seu ritmo, comigo.",
   },
 ];
 

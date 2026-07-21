@@ -16,10 +16,11 @@ import {
 import { formatPhoneMask } from "@/lib/phone";
 
 const objectives = [
-  "Psicoterapia individual (adulto)",
-  "Psicoterapia infantojuvenil",
-  "Tratamento de dependência química",
-  "Atendimento online",
+  "Ansiedade e Síndrome do Pânico",
+  "Depressão",
+  "Transtornos Alimentares",
+  "Avaliação Neuropsicológica",
+  "Hipnoterapia",
   "Ainda não sei, quero conversar",
 ] as const;
 
@@ -33,7 +34,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     const lines = [
-      "Olá, Débora! Vim pelo site.",
+      "Olá, Greice! Vim pelo site.",
       "",
       `*Nome:* ${name}`,
       `*Telefone:* ${phone}`,
@@ -160,7 +161,7 @@ export default function ContactForm() {
                 <div>
                   <p className="text-sm font-medium text-forest">Telefone / WhatsApp</p>
                   <a
-                    href={buildWhatsAppUrl("Olá, Débora! Gostaria de mais informações.")}
+                    href={buildWhatsAppUrl("Olá, Greice! Gostaria de mais informações.")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-1 block text-sm text-text-muted hover:text-forest"
@@ -189,7 +190,7 @@ export default function ContactForm() {
                 <FaClock className="mt-1 h-5 w-5 shrink-0 text-accent" />
                 <div>
                   <p className="text-sm font-medium text-forest">Horário de atendimento</p>
-                  {/* CONFIRMAR com a Débora — manter texto genérico até receber horário exato */}
+                  {/* CONFIRMAR com a Greice — manter texto genérico até receber horário exato */}
                   <p className="mt-1 text-sm text-text-muted">Mediante agendamento</p>
                 </div>
               </div>
@@ -204,7 +205,7 @@ export default function ContactForm() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização do consultório da Psicóloga Débora Goulart no mapa"
+                title="Localização do consultório da Psicóloga Greice Berlitz no mapa"
                 className="w-full"
               />
             </div>

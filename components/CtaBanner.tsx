@@ -23,7 +23,7 @@ export default function CtaBanner() {
                   <em className="italic text-accent-warm">cuidado</em>
                 </h2>
                 <p className="mt-4 max-w-md text-base text-white/80">
-                  Fale agora com a Débora e agende sua primeira sessão.
+                  Fale agora com a Greice e agende sua primeira sessão.
                 </p>
                 <a
                   href={WHATSAPP_URL}

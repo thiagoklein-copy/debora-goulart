@@ -6,7 +6,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0F9C97",
+  /* CONFIRMAR com print real da identidade visual antes de finalizar */
+  themeColor: "#6B4E8E",
 };
 
 const fraunces = Fraunces({
@@ -22,10 +23,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const title = "Psicóloga Débora Goulart | Psicoterapia em Novo Hamburgo - RS";
+const title = "Psicóloga Greice Berlitz | TCC em Novo Hamburgo - RS";
 
 const description =
-  "Atendimento psicológico humanizado para crianças, adolescentes e adultos, com 25 anos de experiência clínica e especialização em dependência química. Presencial no Bairro Rio Branco, Novo Hamburgo, e também online.";
+  "Psicóloga especialista em Terapia Cognitivo-Comportamental, com 16 anos de experiência no tratamento de ansiedade, pânico, depressão e transtornos alimentares. Atendimento em Novo Hamburgo - RS.";
 
 export const metadata: Metadata = {
   title,
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description,
     locale: "pt_BR",
     type: "website",
-    siteName: "Psicóloga Débora Goulart",
+    siteName: "Psicóloga Greice Berlitz",
   },
   twitter: {
     card: "summary_large_image",

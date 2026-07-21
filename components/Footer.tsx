@@ -11,10 +11,11 @@ import {
 import { FaInstagram } from "react-icons/fa";
 
 const serviceLinks = [
-  { label: "Psicoterapia Adultos", href: "#psicoterapia-adultos" },
-  { label: "Psicoterapia Infantojuvenil", href: "#psicoterapia-infantojuvenil" },
-  { label: "Dependência Química", href: "#dependencia-quimica" },
-  { label: "Atendimento Online", href: "#atendimento-online" },
+  { label: "Ansiedade e Pânico", href: "#ansiedade-panico" },
+  { label: "Depressão", href: "#depressao" },
+  { label: "Transtornos Alimentares", href: "#transtornos-alimentares" },
+  { label: "Avaliação Neuropsicológica", href: "#avaliacao-neuropsicologica" },
+  { label: "Hipnoterapia", href: "#hipnoterapia" },
 ];
 
 export default function Footer() {
@@ -27,7 +28,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-text-muted">
-              Psicoterapia com escuta, ética e cuidado — em Novo Hamburgo.
+              Psicoterapia baseada em evidências (TCC) — em Novo Hamburgo.
             </p>
           </div>
 
@@ -75,7 +76,7 @@ export default function Footer() {
               <p className="text-sm text-text-muted">{CLINIC_ADDRESS}</p>
               <p>
                 <a
-                  href={buildWhatsAppUrl("Olá, Débora! Gostaria de mais informações.")}
+                  href={buildWhatsAppUrl("Olá, Greice! Gostaria de mais informações.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-text-muted hover:text-forest"
@@ -101,7 +102,7 @@ export default function Footer() {
         <div className="mt-12 border-t border-forest/10 pt-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm text-text-muted">
-              © {year} Débora Goulart. Todos os direitos reservados.
+              © {year} Greice Berlitz. Todos os direitos reservados.
             </p>
             <p className="text-xs text-text-muted">{PROFESSIONAL_CRP}</p>
           </div>

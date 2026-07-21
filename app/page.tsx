@@ -1,13 +1,13 @@
 /*
- * CHECKLIST — itens pendentes de confirmação com a Débora antes de publicar:
+ * CHECKLIST — itens pendentes de confirmação com a Greice antes de publicar:
  * - [ ] Valores reais das sessões (todos os cards estão como "sob consulta")
  * - [ ] Horário de atendimento
  * - [ ] Convênios aceitos (se houver)
  * - [ ] Fotos reais (hero, seção "minha formação", cta-banner)
- * - [ ] Confirmação/autorização para uso de depoimentos (os atuais são fictícios/ilustrativos)
- * - [ ] Formação acadêmica completa (faculdade, ano, pós-graduações formais)
+ * - [ ] 6 depoimentos reais do Google (seção 8 do brief foi cortada no envio)
+ * - [ ] Confirmar paleta #6B4E8E com print da identidade visual
+ * - [ ] Confirmar handle oficial do Instagram
  */
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
