@@ -11,7 +11,7 @@ export const WHATSAPP_URL = buildWhatsAppUrl(WHATSAPP_DEFAULT_MESSAGE);
 
 export const NAV_LINKS = [
   { label: "Início", href: "#inicio" },
-  { label: "Sobre a psicóloga", href: "#sobre" },
+  { label: "Sobre mim", href: "#sobre" },
   { label: "Especialidades", href: "#atendimentos" },
   { label: "Depoimentos", href: "#depoimentos" },
   { label: "Contato", href: "#contato" },

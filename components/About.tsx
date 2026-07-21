@@ -36,9 +36,9 @@ export default function About() {
           </p>
           <p>
             Minha abordagem é direta e baseada em evidências científicas: trabalho no
-            problema atual do paciente para gerar mudanças reais e perceptíveis já nos
-            primeiros meses de acompanhamento. Sou graduada pela ULBRA (2007) e
-            pós-graduada em Terapia Cognitivo-Comportamental pela UFRGS (2012).
+            problema atual para gerar mudanças reais e perceptíveis já nos primeiros
+            meses de acompanhamento. Sou graduada pela ULBRA (2007) e pós-graduada em
+            Terapia Cognitivo-Comportamental pela UFRGS (2012).
           </p>
         </div>
 

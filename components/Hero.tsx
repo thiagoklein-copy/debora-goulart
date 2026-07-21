@@ -49,9 +49,9 @@ export default function Hero() {
             </h1>
 
             <p className="mt-5 max-w-lg text-base leading-relaxed text-text-muted sm:mt-6 sm:text-lg">
-              Psicoterapia baseada em evidências (TCC) para ansiedade, pânico,
-              depressão e transtornos alimentares. Atendimento presencial em Novo
-              Hamburgo, com resultados desde as primeiras semanas.
+              Ofereço psicoterapia baseada em evidências (TCC) para ansiedade,
+              pânico, depressão e transtornos alimentares. Atendo presencialmente
+              em Novo Hamburgo, com resultados desde as primeiras semanas.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center">

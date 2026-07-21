@@ -29,7 +29,7 @@ const services: Service[] = [
     icon: HiSparkles,
     title: "Ansiedade e Síndrome do Pânico",
     description:
-      "Tratamento baseado em TCC para quebrar o ciclo de crises de ansiedade e pânico, com técnicas práticas para o dia a dia.",
+      "Trabalho com TCC para quebrar o ciclo de crises de ansiedade e pânico, com técnicas práticas para o seu dia a dia.",
     duration: "50 min",
     price: "Valores sob consulta",
     whatsappTopic: "tratamento de Ansiedade e Pânico",
@@ -39,7 +39,7 @@ const services: Service[] = [
     icon: HiHeart,
     title: "Depressão",
     description:
-      "Acompanhamento estruturado e baseado em evidências para retomar a qualidade de vida e o bem-estar emocional.",
+      "Acompanho você de forma estruturada e baseada em evidências para retomar a qualidade de vida e o bem-estar emocional.",
     duration: "50 min",
     price: "Valores sob consulta",
     whatsappTopic: "tratamento de Depressão",
@@ -49,7 +49,7 @@ const services: Service[] = [
     icon: HiUserGroup,
     title: "Transtornos Alimentares",
     description:
-      "Abordagem especializada para uma relação mais saudável com a alimentação e o corpo, com foco em resultado sustentável.",
+      "Ajudo você a construir uma relação mais saudável com a alimentação e o corpo, com foco em resultado sustentável.",
     duration: "50 min",
     price: "Sob consulta",
     whatsappTopic: "Transtornos Alimentares",
@@ -59,7 +59,7 @@ const services: Service[] = [
     icon: HiBeaker,
     title: "Avaliação Neuropsicológica",
     description:
-      "Avaliação completa de funções cognitivas para diagnóstico preciso e direcionamento terapêutico adequado.",
+      "Realizo uma avaliação completa das funções cognitivas para um diagnóstico preciso e o direcionamento terapêutico adequado.",
     duration: "Sob avaliação",
     price: "Sob consulta",
     whatsappTopic: "Avaliação Neuropsicológica",
@@ -69,7 +69,7 @@ const services: Service[] = [
     icon: HiMoon,
     title: "Hipnoterapia",
     description:
-      "Técnica complementar para acelerar processos terapêuticos e trabalhar padrões inconscientes de forma segura.",
+      "Uso essa técnica complementar para acelerar processos terapêuticos e trabalhar padrões inconscientes de forma segura.",
     duration: "50 min",
     price: "Sob consulta",
     whatsappTopic: "Hipnoterapia",
@@ -133,7 +133,7 @@ export default function Services() {
           eyebrow="Áreas de atuação"
           title={
             <>
-              Atendimentos pensados para cada etapa da sua{" "}
+              Como posso te acompanhar em cada etapa da sua{" "}
               <em className="not-italic text-accent">jornada</em>
             </>
           }
@@ -151,7 +151,7 @@ export default function Services() {
             Valores podem variar conforme avaliação inicial. Consulte condições de
             convênio e parcelamento.
           </p>
-          <p>Atende crianças, adolescentes e adultos.</p>
+          <p>Atendo crianças, adolescentes e adultos.</p>
         </div>
       </div>
     </MotionSection>

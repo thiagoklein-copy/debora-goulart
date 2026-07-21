@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-text-muted">
-              Psicoterapia baseada em evidências (TCC) — em Novo Hamburgo.
+              Ofereço psicoterapia baseada em evidências (TCC) — em Novo Hamburgo.
             </p>
           </div>
 

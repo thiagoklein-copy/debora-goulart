@@ -17,8 +17,8 @@ const professional = {
     "Especialidades: Psicologia Clínica, Avaliação Neuropsicológica e Hipnoterapia",
     "Abordagens: TCC, Terapia do Esquema e Terapia de Aceitação e Compromisso (ACT)",
   ],
-  bio: "Atendo com foco em resultado e base científica, ajudando cada paciente a compreender e transformar seus padrões de pensamento e comportamento. Já atuei em psicologia clínica, hospitalar e organizacional.",
-  modality: "Atendimento: presencial (Centro, Novo Hamburgo)",
+  bio: "Atendo com foco em resultado e base científica, ajudando você a compreender e transformar seus padrões de pensamento e comportamento. Já atuei em psicologia clínica, hospitalar e organizacional.",
+  modality: "Atendo presencialmente no Centro de Novo Hamburgo",
 };
 
 export default function Team() {
@@ -29,7 +29,7 @@ export default function Team() {
           eyebrow="Minha formação"
           title={
             <>
-              Trajetória dedicada ao seu{" "}
+              Minha trajetória dedicada ao seu{" "}
               <em className="not-italic text-accent">cuidado</em>
             </>
           }
@@ -87,7 +87,7 @@ export default function Team() {
                   rel="noopener noreferrer"
                   className="btn-primary w-full text-center sm:w-auto"
                 >
-                  Agendar com a Greice
+                  Agendar comigo
                 </a>
               </div>
             </div>
